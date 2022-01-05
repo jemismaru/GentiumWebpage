@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
   </head>
 <body>
     <div id="mainDiv">
@@ -27,24 +28,31 @@
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                      <hr align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Services<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Works<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Client<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Blog<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">Contact<span class="sr-only">(current)</span></a>
+                      <hr class="hideHr" align="left" id="navHr">
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="./index.html">
@@ -63,7 +71,7 @@
                 <h1 class="pgTitle">We're a digital</h1>
                 <h1 class="pgTitle">agency.</h1>
             </div>
-            <div id="startedBtn">
+            <div onclick="redirectFun()" id="startedBtn">
                 <p id="btnText">Getting Started</p>
             </div>
             <div class="container-fluid">
@@ -79,29 +87,40 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12">
-                        <div class="colDiv greyDiv">
-                            <i class="greyColIcon fa fa-rocket fa-3x" aria-hidden="true"></i>
+                        <div id="col2" onmouseover="changeEffect()" onmouseout="resetEffect()" class="colDiv greyDiv">
+                            <i id="iconRocket" class="greyColIcon fa fa-rocket fa-3x" aria-hidden="true"></i>
                             <br><br><br>
                             <h3 class="colTitle">Product Design.</h3>
-                            <hr align="left" id="colHrG">
+                            <hr class="colHrG" align="left" id="colHrG1">
                             <br>
                             <p class="colPara">There are many variations of passages of available, but the majority alteration in some form.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="colDiv greyDiv">
-                            <i class="greyColIcon fa fa-pie-chart fa-3x" aria-hidden="true"></i>
-                            <br><br><br>
-                            <h3 class="colTitle">Inovative Solutions.</h3>
-                            <hr align="left" id="colHrG">
-                            <br>
-                            <p class="colPara">The generated Lorem lpsum is therefore always free from repetition, injected humour.</p>
+                    <div id="shadowDiv" class="col-lg-4 col-sm-12">
+                        <div id="padDiv">
+                          <div id="shadDiv" onmouseover="changeEffect1()" onmouseout="resetEffect1()" class="colDiv greyDiv">
+                              <i id="iconPie" class="greyColIcon fa fa-pie-chart fa-3x" aria-hidden="true"></i>
+                              <br><br><br>
+                              <h3 class="colTitle">Inovative Solutions.</h3>
+                              <hr class="colHrG" align="left" id="colHrG2">
+                              <br>
+                              <p class="colPara">The generated Lorem lpsum is therefore always free from repetition, injected humour.</p>
+                              <div id="ritUpShd"></div>
+                          </div>
+                        </div>
+                        <div id="btmShd">
+                            <div id="ritShd"></div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
-            <br><br><br><br><br>
         </div>
+    </div>
+    <div id="vlDiv" class="container-fluid">
+      <div class="row">
+        <div id="vlCol" class="col-lg-6"></div>
+        <div class="col-lg-6"></div>
+      </div>
     </div>
 </body>
 </html>
